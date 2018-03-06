@@ -22,9 +22,16 @@ body
 	font-size 100%
 	text-transform capitalize
 	font-family 'gt walsheim','noto sans cjk tc',arail,'microsoft yahei'
+		transform translate(0, -2px)
 .pc-module
 	--pc-module-header 70px
 	padding-top var(--pc-module-header)
+	.btn-public
+		background linear-gradient(to right,#042ea0 0%,#81adff 100%) left top/100% 100% no-repeat
+		transition 0.3s
+		&:active,
+		&:hover
+			box-shadow 3px 6px 7px rgba(0,0,0,0.3)
 	.header
 		position fixed
 		top 0
@@ -33,6 +40,8 @@ body
 		height var(--pc-module-header)
 		box-shadow 0 3px 10px #ccc
 		text-transform capitalize
+		background #fff
+		z-index 100
 		.clear
 			height 100%
 		.brand
@@ -68,12 +77,6 @@ body
 			color #fff
 			text-align center
 			line-height 40px
-			background linear-gradient(to right,#042ea0 0%,#81adff 100%) left top/100% 100% no-repeat
-			transition 0.3s
-			&:active,
-			&:hover
-				box-shadow 3px 6px 7px rgba(0,0,0,0.3)
-				transform translate(0, -2px)
 	.main
 		.poa
 			position absolute
@@ -87,12 +90,51 @@ body
 			z-index 3
 		.z4
 			z-index 4
-		.section-page-one
-			height 970px
+		.w
+			position relative
+			height 100%
+		h2
+			padding 140px 0 120px
+			font-size 36px
+			color #4a4a4a
+			line-height 1.5
+			text-transform uppercase
+			text-align center
+			font-weight bold 
+		.content
+			width 600px
+			.pt120
+				padding-top 120px
+			h3
+			h4
+				font-size 30px
+				color #474747
+				line-height 2
+				font-weight bold
+			p
+				padding-top 50px
+				font-size 22px
+				color #191919
+				line-height 46px
+				text-align left
+				&+p
+					padding-top 0
+			.btn
+				display block
+				margin-top 50px
+				width 210px
+				height 74px
+				font-size 20px
+				color #fff
+				line-height 74px
+				text-align center
+				border-radius 37px
+		&>*
 			width 100%
 			overflow hidden
+		.section-page-one
+			height 970px
 			.w
-				position relative
 				height 100%
 				display -webkit-flex
 				display -moz-flex
@@ -156,8 +198,95 @@ body
 					margin-left -780px 
 					margin-top -50px
 					animation cloud3 5s linear infinite
-
-
+		.section-page-two
+			height 1245px
+			background url('../img/00 bgc/bgc 01.svg') center top no-repeat
+			.service
+				margin-top -343px
+				margin-left 120px
+			.id
+				margin-left -750px
+				margin-top -405px
+		.section-page-three
+			height 730px	
+			.building
+				margin-top -350px
+				margin-left -800px
+			.id
+				margin-left 360px
+				margin-top -270px
+			.oval-1
+				margin-left -300px
+				margin-top 310px
+				width 24px
+				height 24px
+				border-radius 12px
+				background linear-gradient(to right,#032d9f 0%,#89b2ff 100%) left center/100% 100% no-repeat
+				animation oval-1 5s infinite linear
+			.oval-2
+				margin-left 560px
+				margin-top 150px
+				width 40px
+				height 40px
+				background #cdd9f4
+				border-radius 20px
+				background #b9c6e8
+				animation oval-2 5s infinite linear
+		.section-page-four
+			height 1230px
+			background url('../img/00 bgc/bgc 03.svg') center top no-repeat
+			.content
+				padding-top 430px
+			.factoey
+				margin-top -360px
+				margin-left 60px
+			.id
+				margin-left -710px
+				margin-top -300px
+		.section-page-news
+			padding-bottom 80px
+			h2
+				padding 0
+				padding-bottom 100px
+			.list
+				.w32
+					width 31%
+					box-shadow 3px 3px 10px #ccc
+					border-radius 20px
+					&+.w32
+						margin-left 3.5%
+					img
+						display block
+						width 100%
+					.text
+						padding 30px
+						h3
+							font-size 30px
+							color #313131
+							line-height 1
+							padding-bottom 20px
+							font-weight bold
+						.date
+							font-size 14px
+							color #a4a4a4
+							line-height 1
+		.section-page-partners
+			h2
+				padding 80px 0 60px
+			.list
+				text-align center
+				text-align justify
+				text-align-last justify
+				.brand
+					display inline-block
+					img
+						display block
+					.justify_fix
+						display inline-block
+						width 100%
+						height 0
+						overflow hidden
+						
 @keyframes cloud1{
 	50%{
 		transform translate(0, 30px)
@@ -182,4 +311,55 @@ body
 		transform translate(0, -30px)
 	}	
 		
+}
+
+@keyframes oval-1{
+	0%,80%,100%{
+		transform translate(-100px,0)
+		opacity 0
+		background linear-gradient(to right,#032d9f 0%,#89b2ff 100%) left center/100% 100% no-repeat
+	}
+	10%{
+		transform translate(0,0)
+		opacity 1
+	}
+	30%{
+		transform translate(20px, 20px)
+	}
+	40%{
+		transform translate(50px, 30px)
+		width 24px
+		height 24px
+	}
+	50%{
+		transform translate(80px, -30px)
+		width 40px
+		height 40px
+		border-radius 20px 
+		background linear-gradient(to right,#032d9f 0%,#89b2ff 100%) left center/100% 100% no-repeat
+	}
+	60%{
+		transform translate(120px, -50px)
+		background-image linear-gradient(to right,#b9c6e8 0%,#b9c6e8 100%)
+	}
+	70%{
+		transform translate(150px, -80px)
+		opacity 0
+	}
+}
+@keyframes oval-2{
+	0%,100%{
+		width 40px
+		height 40px
+		border-radius 20px
+		transform translate(0, 0)
+		background #b9c6e8
+	}
+	50%{
+		width 20px
+		height 20px
+		border-radius 10px
+		background #032d9f
+		transform translate(100px, 100px)
+	}
 }
