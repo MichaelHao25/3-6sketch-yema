@@ -20,10 +20,17 @@ filter:alpha(opacity=40); 针对 IE8 以及更早的版本 */
 	margin 0 auto
 body
 	font-size 100%
+	text-transform capitalize
 	font-family 'gt walsheim','noto sans cjk tc',arail,'microsoft yahei'
 .pc-module
+	--pc-module-header 70px
+	padding-top var(--pc-module-header)
 	.header
-		height 64px
+		position fixed
+		top 0
+		left 0
+		right 0
+		height var(--pc-module-header)
 		box-shadow 0 3px 10px #ccc
 		text-transform capitalize
 		.clear
@@ -33,7 +40,7 @@ body
 			height 100%
 			background url('../img/00 Landing page/00 Logo.png') left center no-repeat
 		.p14-0-10
-			padding 14px 0 10px
+			padding 15px 0 15px
 			box-sizing border-box
 			height 100%
 			font-size 16px
@@ -64,5 +71,114 @@ body
 			background linear-gradient(to right,#042ea0 0%,#81adff 100%) left top/100% 100% no-repeat
 			transition 0.3s
 			&:active
-				box-shadow inset 1px 1px 5px #000
-			
+				box-shadow 3px 6px 7px rgba(0,0,0,0.3)
+				transform translate(0, -2px)
+	.main
+		.poa
+			position absolute
+			top 50%
+			left 50%
+		.z1
+			z-index 1
+		.z2
+			z-index 2
+		.z3
+			z-index 3
+		.z4
+			z-index 4
+		.section-page-one
+			height 970px
+			width 100%
+			overflow hidden
+			.w
+				position relative
+				height 100%
+				display -webkit-flex
+				display -moz-flex
+				display -ms-flex
+				display -o-flex
+				display flex
+				align-items center
+				justify-content flex-end
+				.content
+					width 410px
+					h3 
+						font-size 66px
+						color #5486f4
+						line-height 1.5
+						font-weight bold
+					h4
+						padding-bottom 40px
+						font-size 20px
+						color #2c2c2c
+						line-height 1.5
+					p
+						padding-bottom 60px
+						font-size 20px
+						color #292929
+						line-height 35px	
+					.btn
+						display block
+						width 69px
+						height 69px
+						margin 0 auto
+						background url('../img/00 Landing page/Arrow Button.png') center center no-repeat		
+				img
+					display block
+				.bg
+					margin-top -323px
+					margin-left -820px
+				.cloud-1
+					margin-left -586px 
+					margin-top -323px
+					animation cloud1 5s linear infinite
+
+				.cloud-2
+					margin-left -214px 
+					margin-top -257px
+					animation cloud2 5s linear infinite
+
+				.cloud-3
+					margin-left -819px 
+					margin-top -94px
+					animation cloud3 5s linear infinite
+
+				.cloud-4
+					margin-left -110px 
+					margin-top 220px
+					animation cloud4 5s linear infinite
+				.cloud-5
+					margin-left 30px 
+					margin-top 220px
+					animation cloud4 5s linear infinite
+				.cloud-6
+					margin-left -780px 
+					margin-top -50px
+					animation cloud3 5s linear infinite
+
+
+@keyframes cloud1{
+	50%{
+		transform translate(0, 20px)
+	}
+}
+@keyframes cloud2{
+
+	50%{
+		transform translate(0, 10px)
+	}	
+}
+@keyframes cloud3{
+
+	50%{
+		transform translate(0, -10px)
+	}	
+	
+}
+@keyframes cloud4{
+
+	50%{
+		transform translate(0, -20px)
+	}	
+		
+}
