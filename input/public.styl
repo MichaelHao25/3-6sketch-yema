@@ -8,8 +8,61 @@ background:rgba(255,255,255,.8);
 
 
 filter:alpha(opacity=40); 针对 IE8 以及更早的版本 */
-
-.w{max-width: 1340px;width: 100%;margin: 0 auto;}
-body{
-	font-size: 100%;
-}
+@font-face
+	font-family 'gt walsheim'
+	src url('../font/GT-Walsheim-Medium.ttf')
+@font-face
+	font-family 'noto sans cjk tc'
+	src url('../font/NotoSansCJKtc-Medium.otf')
+.w
+	max-width 1200px
+	width 100%
+	margin 0 auto
+body
+	font-size 100%
+	font-family 'gt walsheim','noto sans cjk tc',arail,'microsoft yahei'
+.pc-module
+	.header
+		height 64px
+		box-shadow 0 3px 10px #ccc
+		text-transform capitalize
+		.clear
+			height 100%
+		.brand
+			width 275px
+			height 100%
+			background url('../img/00 Landing page/00 Logo.png') left center no-repeat
+		.p14-0-10
+			padding 14px 0 10px
+			box-sizing border-box
+			height 100%
+			font-size 16px
+			color #2e6bf2
+			line-height 40px
+		.menu
+			white-space nowrap
+			.item
+				margin-right 40px
+				a
+					display block
+				&.child-menu
+					position relative
+					&>a
+						padding-right 23px
+						background url('../img/00 Landing page/arrow-bottom.png') right center no-repeat
+				.child-menu-toggle
+					position absolute
+					display none
+					background #fff
+		.contant-us
+			height 100%
+			width 170px
+			border-radius 5px
+			color #fff
+			text-align center
+			line-height 40px
+			background linear-gradient(to right,#042ea0 0%,#81adff 100%) left top/100% 100% no-repeat
+			transition 0.3s
+			&:active
+				box-shadow inset 1px 1px 5px #000
+			
