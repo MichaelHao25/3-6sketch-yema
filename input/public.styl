@@ -24,20 +24,29 @@ body
 	font-family 'gt walsheim','noto sans cjk tc',arail,'microsoft yahei'
 		transform translate(0, -2px)
 .pc-module
-	--pc-module-header 70px
-	padding-top var(--pc-module-header)
+	padding-top 70px
 	.btn-public
 		background linear-gradient(to right,#042ea0 0%,#81adff 100%) left top/100% 100% no-repeat
 		transition 0.3s
 		&:active,
 		&:hover
-			box-shadow 3px 6px 7px rgba(0,0,0,0.3)
+			box-shadow 3px 6px 7px rgba(0,0,0,0.3)	
+	.btn
+		display block
+		margin-top 50px
+		width 210px
+		height 74px
+		font-size 20px
+		color #fff
+		line-height 74px
+		text-align center
+		border-radius 37px
 	.header
 		position fixed
 		top 0
 		left 0
 		right 0
-		height var(--pc-module-header)
+		height 70px
 		box-shadow 0 3px 10px #ccc
 		text-transform capitalize
 		background #fff
@@ -119,16 +128,6 @@ body
 				text-align left
 				&+p
 					padding-top 0
-			.btn
-				display block
-				margin-top 50px
-				width 210px
-				height 74px
-				font-size 20px
-				color #fff
-				line-height 74px
-				text-align center
-				border-radius 37px
 		&>*
 			width 100%
 			overflow hidden
@@ -271,22 +270,226 @@ body
 							color #a4a4a4
 							line-height 1
 		.section-page-partners
+			padding-bottom 100px
 			h2
 				padding 80px 0 60px
 			.list
-				text-align center
-				text-align justify
-				text-align-last justify
+				text-align left
 				.brand
-					display inline-block
+					float left
+					padding 5px
+					width 200px
+					box-sizing border-box
 					img
 						display block
-					.justify_fix
-						display inline-block
-						width 100%
-						height 0
-						overflow hidden
-						
+						margin 0 auto				
+	.footer
+		padding-top 100px
+		overflow hidden
+		background url('../img/00 bgc/bgc 04.svg') center bottom no-repeat
+		.w
+			position relative
+			height 100%
+		.poa
+			position absolute
+			left 50%
+		.cloud-1
+			top 260px
+			margin-left -840px
+			animation cloud1 5s linear infinite
+		.cloud-2
+			top -40px
+			margin-left 140px
+			animation cloud2 5s linear infinite
+		.cloud-3
+			top 200px
+			margin-left 480px
+			animation cloud3 5s linear infinite
+		.brand
+			display block
+			margin 50px auto 70px
+			width 220px
+			img
+				display block
+				margin 0 auto
+		.list
+			position relative
+			margin-top -100px
+			h3
+				font-size 20px
+				color #d0d0cd
+				line-height 2
+				padding-bottom 10px
+			.item
+				margin-top 15px
+			.left
+				width 800px
+				.w33
+					// width 33.33%
+					box-sizing border-box
+					padding-left 100px
+				.item
+					font-size 16px
+					color #fff
+					line-height 38px
+			.right
+				width 360px
+			.information
+				.item
+					height 36px
+					border-radius 18px
+					padding 0 18px
+					font-size 14px
+					line-height 36px
+					color #1053e6
+					border 1px solid #415cac
+					background #fff
+		.content
+			position relative
+			padding-bottom 500px
+			text-align center
+			background url('../img/05/Mail box.png') center bottom no-repeat
+			h3
+				padding-bottom 10px
+				font-size 37px
+				color #4a4a4a
+				line-height 2
+				font-weight bold
+			p
+				font-size 27px
+				color #4a4a4a
+				line-height 2
+				text-transform none
+			.btn
+				width 460px
+				margin 30px auto 0
+	.layout
+		.align-vertical-center
+			position fixed
+			left 0
+			right 0
+			top 0
+			bottom 0
+			background rgba(219,225,225,0.9)
+			z-index 110
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+			align-items center
+			justify-content center
+			overflow hidden
+		.close
+			position absolute
+			left 50px
+			top 50px
+			img
+				display block
+		.contact-us
+			display none
+			.content
+				max-width 970px
+				width 100%
+				padding 3%
+				margin 0 auto
+				box-sizing border-box
+				background #fff
+				box-shadow  0 0 40px #aaa
+				@media(max-width 1700px)
+					width 700px
+					padding 30px
+				.row
+					margin-bottom 30px
+				.mb10
+					margin-bottom 10px
+				.mb0
+					margin-bottom 0
+				h2
+					font-size 40px
+					color #4a4a4a
+					line-height 1
+					padding-bottom 3%
+					text-align center
+					font-weight bold
+					width 100%
+					@media(max-width 1700px)
+						padding-bottom 30px
+				input,textarea
+					background #f7f7f7
+					padding 10px 15px
+					outline none
+					border none
+					border-radius 5px
+					width 100%
+					box-sizing border-box
+					font-size 20px
+					color #000
+					line-height 40px
+					@media(max-width 1700px)
+						padding 0 15px
+						font-size 16px
+					&::placeholder
+						color #9f9f9f
+						font-family 'gt walsheim','noto sans cjk tc',arail,'microsoft yahei'
+				textarea
+					height 300px
+					@media(max-width 1700px)
+						height 230px
+				.file
+					span
+						padding-left 30px
+						background url('../img/06 contact us/attachment.png') left center no-repeat
+					input
+						visibility hidden
+						display none
+				.w48
+					width 48%
+				.btn
+					margin 0 auto
+					width 155px
+					height 66px
+					color #fff
+					font-size 20px
+					line-height 46px
+					border-radius 33px
+					background linear-gradient(to right,#042ea0 0%,#81adff 100%) left top/100% 100% no-repeat
+					@media(max-width 1700px)
+						padding 0
+						height 46px
+		.send-end
+			display none
+			.poa
+				position absolute
+				top 50%
+				left 50%
+			.content
+				color #4a4a4a
+				text-align center
+				.thanks
+					position relative
+					z-index 1
+				h2
+					padding-top 140px
+					font-size 40px
+					padding-bottom 30px
+				h3
+					padding-bottom 80px
+					font-size 30px
+				img
+					display block
+			.cloud-10
+				margin-top -200px
+				margin-left -480px
+				animation cloud1 5s linear infinite
+			.cloud-11
+				margin-left 65px
+				margin-top -350px
+				animation cloud2 5s linear infinite
+			.cloud-12
+				margin-top -50px
+				margin-left 340px
+				animation cloud3 5s linear infinite
 @keyframes cloud1{
 	50%{
 		transform translate(0, 30px)
@@ -303,16 +506,13 @@ body
 	50%{
 		transform translate(0, -15px)
 	}	
-	
 }
 @keyframes cloud4{
 
 	50%{
 		transform translate(0, -30px)
 	}	
-		
 }
-
 @keyframes oval-1{
 	0%,80%,100%{
 		transform translate(-100px,0)
