@@ -804,3 +804,113 @@ body
 					font-size 46px
 				h3
 					font-size 30px
+
+
+
+.mobile-menu
+	position fixed
+	top 0
+	bottom 0
+	left 0
+	right 0
+	z-index 220
+	background #fff url('../img/wap/00 Landing page/00-1 menu/bottom.svg') center center/cover no-repeat
+	display -webkit-flex
+	display -moz-flex
+	display -ms-flex
+	display -o-flex
+	display flex
+	align-items center
+	justify-content center
+	display none
+	&.active
+		display flex
+		animation 0.5s dropDown forwards
+	&.focusActive
+		display flex
+		animation 0.5s dropUp forwards
+	.close
+		position absolute
+		top 10px
+		right 10px
+		width 60px
+		img
+			width 100%
+			display block
+	.content
+		.nav
+			padding-bottom 50px
+			font-size 36px
+			color #fff
+			text-align center
+			line-height 1
+			.toggle
+				padding 30px 0
+				display -webkit-flex
+				display -moz-flex
+				display -ms-flex
+				display -o-flex
+				display flex
+				align-items center
+				justify-content center
+				&.active
+					.icon
+						transform rotate(0)
+					&+.child-menu
+						display block
+			.icon
+				margin-left 10px
+				padding-top 36px
+				width 36px
+				background url('../img/wap/00 Landing page/00-1 menu/Arrow 下午12.51.28.png') center center/50px 50px no-repeat
+				transform rotate(180deg)
+				transition 0.3s
+			.child-menu
+				padding-top 20px
+				display none
+				.item
+					padding-bottom 20px
+					font-size 22px
+					color #fff
+		.copy-right
+			min-width 300px
+			border-top 1px solid #a49ccd	
+			color #fff
+			text-align center
+			h3
+				padding 30px 0 15px
+				font-size 30px
+				line-height 1
+			p
+				font-size 20px
+				padding-bottom 20px
+			.facebook
+				display block
+				width 50px
+				margin 0 auto
+				img
+					display block
+					width 100%
+
+@keyframes dropDown{
+	0%{
+		display flex
+		transform translateY(-100%)
+	}
+	100%{
+		transform translateY(0)	
+	}
+}
+@keyframes dropUp{
+	0%{
+		display flex
+		transform translateY(0)
+	}
+	99%{
+		transform translateY(-100%)	
+	}
+	100%{
+		display none
+		transform translateY(-100%)
+	}
+}

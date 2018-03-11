@@ -422,7 +422,6 @@
 				</div>
 			</div>
 		</main>
-
 		<footer class="footer">
 			<div class="w">
 				<div class="cloud-1 poa"><img src="img/05/cloud 10.png" alt=""></div>
@@ -493,6 +492,51 @@
 			</div>
 			<a href="#" class="brand"><img src="img/Logo bottom.png" alt=""></a>
 		</footer>
+		<div class="mobile-menu">
+			<div class="close">
+				<img src="img/wap/00 Landing page/00-1 menu/Close.png" alt="">
+			</div>
+			<div class="content">
+				<div class="nav">
+					<div class="item">
+						<div class="toggle">
+							<a href="#">关于我们</a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="toggle">
+							<a href="#">最新消息</a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="toggle">
+							<span>服务项目</span><i class="icon"></i>
+						</div>
+						<div class="child-menu">
+							<div class="item">
+								<a href="#">智能工厂</a>
+							</div>
+							<div class="item">
+								<a href="#">智慧楼宇</a>
+							</div>
+							<div class="item">
+								<a href="#">智慧商务</a>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="toggle">
+							<a href="#">解决方案</a>
+						</div>
+					</div>
+				</div>
+				<div class="copy-right">
+					<h3>联络我们</h3>
+					<p>service@ico-si.com</p>
+					<a href="#" class="facebook"><img src="img/wap/00 Landing page/00-1 menu/facebook.svg" alt=""></a>
+				</div>
+			</div>
+		</div>
 	</div>
 	<div class="layout wap">
 		<div class="contact-us align-vertical-center">
@@ -591,6 +635,19 @@
 			} else {
 				$('.layout').addClass('wap')
 			}
+		});
+
+		$('.mobile-menu .content .nav .toggle').on('click', function() {
+			if($(this).siblings('.child-menu').length>0){
+				$(this).toggleClass('active');
+			}
+		});
+		$('.wap-module .header .toggle-menu').on('click', function() {
+			$('.mobile-menu').addClass('active').removeClass('focusActive');
+		});
+		$('.mobile-menu .close').on('click', function() {
+			$('.mobile-menu').removeClass('active').addClass('focusActive');
+
 		});
 	</script>
 </body>
