@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval 04</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="85.8980706%" y1="21.2013505%" x2="21.3966436%" y2="84.7964794%" id="linearGradient-1">
+            <stop stop-color="#89B2FF" stop-opacity="0.589136096" offset="0%"></stop>
+            <stop stop-color="#042EA0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tablet" transform="translate(-554.000000, -2481.000000)" fill="url(#linearGradient-1)">
+            <circle id="Oval-04" cx="566.5" cy="2493.5" r="12.5"></circle>
+        </g>
+    </g>
+</svg>

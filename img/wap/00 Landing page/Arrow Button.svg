@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="43px" height="43px" viewBox="0 0 43 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Arrow Button</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="89.1997479%" y1="56.8885148%" x2="11.5830559%" y2="56.8885163%" id="linearGradient-1">
+            <stop stop-color="#89B2FF" offset="0%"></stop>
+            <stop stop-color="#042EA0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="193.954008%" y1="4.27956879%" x2="0%" y2="4.27956879%" id="linearGradient-2">
+            <stop stop-color="#E3EDFF" offset="0%"></stop>
+            <stop stop-color="#FF0000" stop-opacity="0.0739639946" offset="75.0151573%"></stop>
+            <stop stop-color="#00268A" stop-opacity="0.419610507" offset="100%"></stop>
+        </linearGradient>
+        <polyline id="path-3" points="14.0746269 19.5820896 20.4180432 26.6176659 26.735672 19.6106909"></polyline>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tablet" transform="translate(-363.000000, -471.000000)">
+            <g id="Arrow-Button" transform="translate(364.000000, 472.000000)">
+                <circle id="Arrow-bottom" stroke-opacity="0.15" stroke="#000000" cx="20.5" cy="20.5" r="20.5"></circle>
+                <g id="Arrow" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+                    <use stroke="url(#linearGradient-1)" xlink:href="#path-3"></use>
+                    <use stroke="url(#linearGradient-2)" xlink:href="#path-3"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

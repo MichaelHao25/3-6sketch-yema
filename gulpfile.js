@@ -114,7 +114,7 @@ gulp.task('css', function() {
         // }),
     ];
     // return gulp.src('input/public.pcss')
-    return gulp.src('./input/*.styl')
+    return gulp.src('./input/public.styl')
         // return gulp.src('./input/*.css')
         .pipe(sourcemaps.init())
         // .pipe(postcss(processors))

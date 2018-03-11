@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="768px" height="1024px" viewBox="0 0 768 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>bottom</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="0%" x2="0%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#E7EDFB" offset="0%"></stop>
+            <stop stop-color="#F7F3FD" offset="48.2700893%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="29.9056427%" x2="0%" y2="0%" id="linearGradient-2">
+            <stop stop-color="#DDB3FF" offset="0%"></stop>
+            <stop stop-color="#0C12C3" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-3" points="0 0 768 0 768 1024 0 1024"></polygon>
+        <filter x="-7.4%" y="-2.9%" width="114.8%" height="111.1%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="19" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="12.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0535269475 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="8" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0270323822 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50.6999857%" y1="98.3224418%" x2="50.699985%" y2="0%" id="linearGradient-5">
+            <stop stop-color="#0900AC" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="52.4575813%" y1="125.457232%" x2="50.699985%" y2="0%" id="linearGradient-6">
+            <stop stop-color="#130BA3" offset="0%"></stop>
+            <stop stop-color="#FFE38C" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tablet-menu">
+            <g id="bottom">
+                <g id="bgc-01-" opacity="0.475713315">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    <use fill="url(#linearGradient-2)" fill-rule="evenodd" xlink:href="#path-3"></use>
+                </g>
+                <rect id="bgc-02" fill="url(#linearGradient-5)" x="0" y="0" width="768" height="1024"></rect>
+                <rect id="bgc-03" fill="url(#linearGradient-6)" x="0" y="0" width="768" height="1024"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

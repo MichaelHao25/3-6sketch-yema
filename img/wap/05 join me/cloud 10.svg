@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="113px" height="97px" viewBox="0 0 113 97" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>cloud 10</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M164.568182,189.5 L204.75,189.5 C213.724627,189.5 221,196.775373 221,205.75 C221,214.724627 213.724627,222 204.75,222 L16.25,222 C7.27537282,222 1.09907485e-15,214.724627 0,205.75 C-1.09907485e-15,196.775373 7.27537282,189.5 16.25,189.5 L67.7875494,189.5 C58.8129222,189.5 51.5375494,182.224627 51.5375494,173.25 C51.5375494,164.275373 58.8129222,157 67.7875494,157 L164.568182,157 C173.542809,157 180.818182,164.275373 180.818182,173.25 C180.818182,182.224627 173.542809,189.5 164.568182,189.5 Z" id="path-1"></path>
+        <filter x="-15.4%" y="-35.4%" width="130.8%" height="204.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0897305254 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0333163496 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tablet" transform="translate(0.000000, -7296.000000)">
+            <g id="Become-a-team-member" transform="translate(-124.000000, 7145.000000)">
+                <g id="cloud-10">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
