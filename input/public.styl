@@ -22,6 +22,12 @@ body
 	font-size 16px
 	text-transform capitalize
 	font-family 'gt walsheim','noto sans cjk tc',arail,'microsoft yahei'
+	@media(max-width 1600px)
+		zoom 0.8
+		@supports not ( zoom 0.8 )
+			transform-origin left top
+			transform scale(0.8,0.8)
+			width 125%
 .wap-module
 	display none
 .pc-module
@@ -208,6 +214,7 @@ body
 			// 0 3px 10px #ccc,
 			position relative
 			background url('../img/add-4-2/bgc-04.jpg') center top/100% 100% no-repeat
+			box-shadow 0 5px 5px #ccc 
 			&:after
 				content ""
 				position absolute
@@ -288,7 +295,7 @@ body
 		.section-page-news
 			padding-bottom 80px
 			h2
-				padding 0
+				padding-top 50px
 				padding-bottom 100px
 			.list
 				.w32
@@ -389,7 +396,7 @@ body
 	.footer
 		padding-top 100px
 		overflow hidden
-		background url('../img/00 bgc/bgc 04.svg') center bottom/100% 100% no-repeat
+		background url('../img/00 bgc/bgc 04.svg') center bottom/100% auto no-repeat
 		.w
 			position relative
 			height 100%

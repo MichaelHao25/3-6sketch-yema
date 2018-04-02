@@ -657,7 +657,7 @@
 				scrollTop: $('.pc-module .main .section-page-three').offset().top},
 				400, function() {
 					console.log(1);
-			});
+				});
 		});
 		$('.wap-module .main .page-one .arrow-bottom').on('click', function() {
 			
@@ -665,8 +665,27 @@
 				scrollTop: $('.wap-module .main .next-all').offset().top},
 				400, function() {
 					console.log(1);
-			});
+				});
 		});
+		$('body').attr('data-height',$('body').height() );
+
+		$(window).on('resize', function() {
+			if(navigator.userAgent.indexOf("Firefox")>=0){
+				if (window.innerWidth<=1600) {
+
+					$('body').css({
+						height: parseInt($('body').attr('data-height'))*0.8,
+						overflow: 'scroll'
+					});;
+				}else{
+					$('body').css({
+						height: 'auto',
+						overflow: 'auto'
+					});;
+				}
+			}
+		});
+		$(window).trigger('resize');
 	</script>
 </body>
 </html>
