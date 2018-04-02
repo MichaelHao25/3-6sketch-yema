@@ -59,10 +59,10 @@
 					<div class="cloud-5 poa z3"><img src="img/00 Landing page/cloud 04 copy 2.png" alt=""></div>
 					<div class="cloud-6 poa z3"><img src="img/00 Landing page/cloud 04.png" alt=""></div>
 					<div class="content">
-						<h3>Smart Lift</h3>
+						<h3>Smart Life</h3>
 						<h4>we create ,we build we style</h4>
 						<p>加云联网主要提供电子商务平台、智慧建筑，与智慧工厂规划，致力于打造智能生活平台，让我们一步步协助您完成心中得理想。</p>
-						<a href="#" class="btn"></a>
+						<a href="javascript:;" class="btn"></a>
 					</div>
 				</div>
 			</div>
@@ -252,7 +252,7 @@
 				<h3>Smart Life</h3>
 				<h4>We Create, We Build,We style.</h4>
 				<p>加雲聯網主要提供智慧工廠、智慧樓宇，與智慧商務規劃，致力於打造智能生活平台，讓我們一步步協助您建構心中的理想。</p>
-				<a href="#" class="arrow-bottom w44"><img src="img/wap/00 Landing page/Arrow Button.svg" alt=""></a>
+				<a href="javascript:;" class="arrow-bottom w44"><img src="img/wap/00 Landing page/Arrow Button.svg" alt=""></a>
 				<div class="banner w700">
 					<img src="img/wap/00 Landing page/smart life.png" alt="">
 				</div>
@@ -648,6 +648,23 @@
 		$('.mobile-menu .close').on('click', function() {
 			$('.mobile-menu').removeClass('active').addClass('focusActive');
 
+		});
+
+		$('.pc-module .main .section-page-one .w .content .btn').on('click', function() {
+
+			$('body,html').animate({
+				scrollTop: $('.pc-module .main .section-page-three').offset().top},
+				400, function() {
+					console.log(1);
+			});
+		});
+		$('.wap-module .main .page-one .arrow-bottom').on('click', function() {
+			
+			$('body,html').animate({
+				scrollTop: $('.wap-module .main .next-all').offset().top},
+				400, function() {
+					console.log(1);
+			});
 		});
 	</script>
 </body>
