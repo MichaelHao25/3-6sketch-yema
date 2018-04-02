@@ -462,7 +462,12 @@ body
 	.contact-us
 		display none
 		&.onload
-			display block
+			// display -webkit-flex
+			// display -moz-flex
+			// display -ms-flex
+			// display -o-flex
+			// display flex
+			display none
 			animation 0.5s fadeOut forwards
 		.content
 			max-width 970px
@@ -540,7 +545,12 @@ body
 	.send-end
 		display none
 		&.onload
-			display block
+			// display -webkit-flex
+			// display -moz-flex
+			// display -ms-flex
+			// display -o-flex
+			// display flex
+			display none
 			animation 0.5s fadeOut forwards
 		.poa
 			position absolute
@@ -657,21 +667,26 @@ body
 
 @keyframes fadeIn{
 	0%{
-		transform scale(0, 0) rotate(0);
+		// transform scale(0, 0) rotate(0);
+		opacity 0
 	}
 	100%{
-		transform scale(1, 1) rotate(360deg);	
+		// transform scale(1, 1) rotate(360deg);	
+		opacity 1
 	}
 }
 @keyframes fadeOut{
 	0%{
-		transform scale(1, 1) rotate(360deg);	
+		// transform scale(1, 1) rotate(360deg);	
+		opacity 1
 	}
 	99%{
-		transform scale(0, 0) rotate(0);
+		// transform scale(0, 0) rotate(0);
+		opacity 0
 	}
 	100%{
-		transform scale(0, 0) rotate(0);
-		display none
+		// transform scale(0, 0) rotate(0);
+		opacity 0
+		// display none
 	}
 }

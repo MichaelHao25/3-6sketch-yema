@@ -88,12 +88,12 @@ gulp.task('css', function() {
         //  unitPrecision:5,
         //   propWhiteList: []
         // }),
-        pxtorem({
-            rootValue: 100,
-            replace: true,
-            unitPrecision: 5,
-            propList: ['*', '!border*'],
-        }),
+        // pxtorem({
+        //     rootValue: 100,
+        //     replace: true,
+        //     unitPrecision: 5,
+        //     propList: ['*', '!border*'],
+        // }),
         // wap
         // pxtorem({
         //     rootValue: 20,
@@ -114,7 +114,7 @@ gulp.task('css', function() {
         // }),
     ];
     // return gulp.src('input/public.pcss')
-    return gulp.src('./input/wap.styl')
+    return gulp.src('./input/public.styl')
         // return gulp.src('./input/*.css')
         .pipe(sourcemaps.init())
         // .pipe(postcss(processors))

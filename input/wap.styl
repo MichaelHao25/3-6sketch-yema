@@ -15,7 +15,7 @@ body
 .pc-module
 	display none
 .wap-module
-	width 100%
+	width 100%!important
 	overflow hidden
 	.header
 		position fixed
@@ -33,6 +33,7 @@ body
 		height 64px
 		box-shadow 0 3px 10px #ccc
 		z-index 110
+		width 100%
 		background #fff
 		a.brand
 			display block
@@ -103,6 +104,7 @@ body
 				width 355px
 				margin 0 auto
 			.contact-us
+				z-index 10
 				top auto
 				left auto
 				right 15px
@@ -680,21 +682,26 @@ body
 
 @keyframes fadeIn{
 	0%{
-		transform scale(0, 0) rotate(0);
+		// transform scale(0, 0) rotate(0);
+		opacity 0
 	}
 	100%{
-		transform scale(1, 1) rotate(360deg);	
+		// transform scale(1, 1) rotate(360deg);	
+		opacity 1
 	}
 }
 @keyframes fadeOut{
 	0%{
-		transform scale(1, 1) rotate(360deg);	
+		// transform scale(1, 1) rotate(360deg);	
+		opacity 1
 	}
 	99%{
-		transform scale(0, 0) rotate(0);
+		// transform scale(0, 0) rotate(0);
+		opacity 0
 	}
 	100%{
-		transform scale(0, 0) rotate(0);
+		// transform scale(0, 0) rotate(0);
+		opacity 0
 		display none
 	}
 }

@@ -140,7 +140,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="section-page-partners">
+			<div class="section-page-partners" hidden="">
 				<h2>我们的伙伴</h2>
 				<div class="list w clear">
 					<div class="brand"><a href="#"><img src="img/04 our partner & customers/1.png" alt=""></a></div>
@@ -152,7 +152,7 @@
 					<span class="justify_fix"></span>
 				</div>
 			</div>
-			<div class="section-page-partners">
+			<div class="section-page-partners" hidden="">
 				<h2>我们的客户</h2>
 				<div class="list w clear">
 					<div class="brand"><a href="#"><img src="img/04 our partner & customers/7.png" alt=""></a></div>
@@ -261,7 +261,7 @@
 				<div class="cloud-3 poa w69"><img src="img/wap/00 Landing page/cloud 03.svg" alt=""></div>
 				<div class="cloud-4 poa w115"><img src="img/wap/00 Landing page/cloud 04.svg" alt=""></div>
 				<div class="cloud-5 poa w148"><img src="img/wap/00 Landing page/cloud 05.svg" alt=""></div>
-				<a href="#" class="contact-us poa w80"><img src="img/wap/00 Landing page/Contact us.svg" alt=""></a>
+				<a href="javascript:;" class="contact-us pof w80"><img src="img/wap/00 Landing page/Contact us.svg" alt=""></a>
 			</section>
 			<div class="next-all">
 				<h2>服务项目</h2>
@@ -347,7 +347,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="new-partners">
+			<div class="new-partners" hidden="">
 				<h3>合作伙伴</h3>
 				<div class="swiper-container">
 					<div class="swiper-wrapper">
@@ -372,7 +372,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="new-partners2">
+			<div class="new-partners2" hidden="">
 				<h3>值得信奈的客户</h3>
 				<div class="swiper-container">
 					<div class="swiper-wrapper">
@@ -599,7 +599,7 @@
 	<script src="js/jquery-1.12.4.min.js"></script>
 	<script src="js/swiper-3.3.1.jquery.min.js"></script>
 	<script>
-		$('.pc-module .footer .content .btn').on('click', function() {
+		$('.pc-module .footer .content .btn,.pc-module .header .contant-us').on('click', function() {
 			$('.layout .contact-us').removeClass('onload').addClass('active');
 		});
 		$('.layout .close').on('click', function() {
@@ -624,7 +624,7 @@
 		var mySwiper = new Swiper ('.new-partners2 .swiper-container', {
 			slidesPerView : 4
 		})       
-		$('.wap-module .footer .content .btn').on('click', function() {
+		$('.wap-module .footer .content .btn,.wap-module .main .page-one .contact-us').on('click', function() {
 			$('.wap-module').hide();
 			$('.layout .contact-us').removeClass('onload').addClass('active');
 		});
