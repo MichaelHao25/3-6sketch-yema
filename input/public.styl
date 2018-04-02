@@ -199,12 +199,23 @@ body
 					margin-top -50px
 					animation cloud3 5s linear infinite
 		.section-page-two
-			height 960px
-			margin 120px 0
+			// height 960px
+			// margin 120px 0
+			height 1200px
 			// background url('../img/00 bgc/bgc group.svg') center bottom /105% 100% no-repeat
-			background linear-gradient(239deg, #ece8fe, #ffffff 47%, #e4eaff)center center/100% 100% no-repeat, linear-gradient(62deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)) center center/100% 100% no-repeat;
-			box-shadow 0 3px 10px #ccc
+			// background linear-gradient(239deg, #ece8fe, #ffffff 47%, #e4eaff)center center/100% 100% no-repeat, linear-gradient(62deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)) center center/100% 100% no-repeat;
+			// box-shadow 0 3px 10px #ccc
 			// 0 3px 10px #ccc,
+			position relative
+			background url('../img/add-4-2/bgc-04.jpg') center top/100% 100% no-repeat
+			&:after
+				content ""
+				position absolute
+				top 0
+				left 0
+				right 0
+				height 200px
+				background #ccc url('../img/add-4-2/bgc-03.jpg') center top/100% 100% no-repeat
 			.service
 				margin-top -200px
 				margin-left 70px
@@ -222,8 +233,24 @@ body
 				h4
 					font-size 26px
 		.section-page-three
+			position relative
 			height 1200px
-			background url('../img/00 bgc/bgc 01.svg') center top/100% 100% no-repeat
+			// background url('../img/00 bgc/bgc 01.svg') center top/100% 100% no-repeat
+			background url('../img/add-4-2/bgc-01.jpg') center top/100% 100% no-repeat
+			// background linear-gradient(239deg, #e7edfb, #f7f3fd 48%, #ffffff), linear-gradient(239deg, #e7edfb, #f7f3fd 48%, #ffffff)
+			&:after
+				content ""
+				position absolute
+				bottom 0
+				left 0
+				right 0
+				height 200px
+				background #ccc url('../img/add-4-2/bgc-02.jpg') center top/100% 100% no-repeat
+			.add-4-2-2poa
+				position absolute
+				bottom 0
+				height 200px
+				width 100%
 			.building
 				margin-top -300px
 				margin-left 200px

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920px" height="988px" viewBox="0 0 1920 988" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="97.2935268%" y1="2.70647321%" x2="0%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#ECE8FE" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="47.1859056%"></stop>
+            <stop stop-color="#E4EAFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="8.85068673%" y1="81.6150925%" x2="88.901024%" y2="8.07786509%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-3" points="0 -23.6384001 1920 -145.000441 1920 989.276537 0 989.276537"></polygon>
+        <filter x="-2.7%" y="-2.6%" width="105.3%" height="109.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="19" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="12.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0535269475 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.03 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="bgc-00-copy" fill="#FFFFFF" x="0" y="-3195" width="1920" height="7150"></rect>
+        <g id="bgc-03-copy">
+            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+            <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-3"></use>
+            <use fill="url(#linearGradient-2)" fill-rule="evenodd" xlink:href="#path-3"></use>
+        </g>
+    </g>
+</svg>

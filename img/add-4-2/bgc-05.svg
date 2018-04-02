@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920px" height="2917px" viewBox="0 0 1920 2917" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#79A7FF" offset="0%"></stop>
+            <stop stop-color="#FFDDCA" stop-opacity="0.50951087" offset="47.1898916%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50.6999857%" y1="98.3224418%" x2="50.699985%" y2="18.2676094%" id="linearGradient-2">
+            <stop stop-color="#150EA1" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="bgc-00-copy" fill="#FFFFFF" x="0" y="-4231" width="1920" height="7150"></rect>
+        <g id="bgc-04-copy" transform="translate(0.000000, 1549.000000)">
+            <rect id="bgc-04" fill="url(#linearGradient-1)" x="1" y="1" width="1920" height="1368"></rect>
+            <rect id="bgc-05" fill="url(#linearGradient-2)" x="0" y="0" width="1920" height="1368"></rect>
+        </g>
+    </g>
+</svg>
